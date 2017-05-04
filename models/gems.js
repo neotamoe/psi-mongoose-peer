@@ -6,7 +6,8 @@ var gemSchema = new Schema({
   gem: String,
   est_value: Number,
   rare: Boolean,
-  date_collected: {type: Date, default: Date.now}
+  // date_collected: {type: Date, default: Date.now}
+  date_collected: Date
 });
 
 var Gem = mongoose.model('gems', gemSchema);
